@@ -4,19 +4,38 @@
 <head>
     <meta charset="utf-8">
     <title>OpenCV.js</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
-    <div>
-        <div class="inputoutput">
-            <img id="imageSrc" alt="No Image" />
-            <div class="caption">imageSrc <input type="file" id="fileInput" name="file" /></div>
-        </div>
-        <div class="inputoutput">
-            <canvas id="canvasOutput"></canvas>
-            <div class="caption">canvasOutput</div>
-        </div>
-    </div>
+   
+    <table class="table table-hover table-centered mb-0 table-sm mb-2">
+        <thead class="bg-primary text-white">
+            <th>Source</th>
+            <th>Action</th>
+            <th>Output</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><div class="caption">imageSrc <input type="file" id="fileInput" name="file" /></div></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><img id="imageSrc" alt="No Image" /></td>
+                <td></td>
+                <td><canvas id="canvasOutput"></canvas></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    
+                </td>
+                <td></td>
+            </tr>
+        </tbody>
+
+    </table>
     <script type="text/javascript">
         let imageSrc = document.getElementById('imageSrc');
         let fileInput = document.getElementById('fileInput');
@@ -31,6 +50,7 @@
         };
     </script>
     <script src="./src/assets/js/opencv.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
